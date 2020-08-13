@@ -1,6 +1,6 @@
 public class CGIManagement {
 
-    private doYourWork(Employee employee) {
+    public void whipEmployee(Employee employee) {
         if (employee instanceof Developer) {
             drinkCoffee();
             codeBugs();
