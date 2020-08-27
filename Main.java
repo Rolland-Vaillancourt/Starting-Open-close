@@ -1,12 +1,12 @@
 class Main { // Bureau de drummondville
     public static void main(String[] args) {
         
-        CGIManagement dominic = new CGIManagement();
+        CGIManagement dominic = new CGIManagement("Dominic Dufresne");
 
         Employee simon = new Developer("Simon Villiard");
-        dominic.whipEmployee(simon);
-
         Employee samuel = new QA("Samuel Dongmo Tedontsa");
-        dominic.whipEmployee(samuel);
+
+        dominic.encourageEmployee(simon);
+        dominic.encourageEmployee(samuel);
     }
 }

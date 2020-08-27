@@ -1,6 +1,13 @@
 public class CGIManagement {
+    
+    private String name;
 
-    public void whipEmployee(Employee employee) {
+    public CGIManagement(String name) {
+        this.name = name;
+        System.out.println(name + " is ready to manage !");
+    }
+
+    public void encourageEmployee(Employee employee) {
         if (employee instanceof Developer) {
             drinkCoffee();
             codeBugs();
@@ -11,26 +18,25 @@ public class CGIManagement {
         }
     }
 
-
     // Developers
     private void drinkCoffee() {
-        System.out.println("Developer is drinking coffee...");
+        System.out.println(" Developer is drinking coffee...");
     }
 
     private void codeBugs() {
-        System.out.println("Developer is adding bugs to the code...");
+        System.out.println(" Developer is adding bugs to the code...");
     }
 
     private void fixTheirBugs() {
-        System.out.println("Developer is fixing their bugs...");
+        System.out.println(" Developer is fixing their bugs...");
     }
 
      // QA
     private void test() {
-        System.out.println("QA is testing...");
+        System.out.println(" QA is testing...");
     }
 
     private void blameTheDev() {
-        System.out.println("QA is blaming the dev...");
+        System.out.println(" QA is blaming the dev...");
     }
 }
